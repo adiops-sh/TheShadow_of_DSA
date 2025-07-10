@@ -64,6 +64,53 @@ Solution: int arr[] = {11, 4, 7, 22, 5, 18, 3, 6, 9, 2};
         }
         System.out.println(BiggerOddEleIndex);
 
+6. Read index of smaller odd element from an array which contains 10 elements?
+solution: int arr[] = {11, 4, 7, 22, 5, 18, 3, 6, 9, 2};
+        int SmallerOddValue = Integer.MAX_VALUE;
+        int SmallerOddEleIndex = -1;
+        for(int i=0;i<arr.length;i++){
+            if(arr[i] % 2 != 0){
+                if(arr[i] < SmallerOddValue){
+                    SmallerOddValue = arr[i];
+                    SmallerOddEleIndex = i;
+                }   
+            }
+
+        }
+        System.out.println(SmallerOddEleIndex);
+
+7. Read indexes of all even elements from an array which contains 10 elements?
+solution: int arr[] = {11, 4, 7, 22, 5, 18, 3, 6, 9, 2};
+        for(int i=0;i<arr.length;i++){
+           if(arr[i] % 2 == 0){
+             System.out.print(i+" ");
+          }
+        }
+
+8. Read indexes of all odd elements from an array which contains 10 elements?
+solution: int arr[] = {11, 4, 7, 22, 5, 18, 3, 6, 9, 2};
+        for(int i=0;i<arr.length;i++){
+           if(arr[i] % 2 != 0){
+             System.out.print(i+" ");
+          }
+        }
+
+9. Read all the elements which are next to even elements?
+solution: int arr[] = {11, 4, 7, 22, 5, 18, 3, 6, 9, 2};
+          for(int i=0;i<arr.length-1;i++){
+            if(arr[i] % 2 == 0){
+              System.out.print(arr[i+1]+" ");
+            }
+          }
+
+10. Read all the elements which are next to odd elements?
+solution: int arr[] = {11, 4, 7, 22, 5, 18, 3, 6, 9, 2};
+          for(int i=0;i<arr.length-1;i++){
+            if(arr[i] % 2 != 0){
+              System.out.print(arr[i+1]+" ");
+            }
+          }
+
 */
 public class Practice1{
      
