@@ -151,10 +151,5 @@ public class Practice1{
      
     public static void main(String[] args) {
         System.out.println("Happy Coding!");
-        // 65. Read 2nd half of the elements from an array which contains 10 elements?
-        int arr[] = {12, 18, 24, 33, 42, 59, 61, 5, 37, 26};
-        for(int i=arr.length/2;i<arr.length;i++){
-            System.out.print(arr[i]+" ");
-        }
     }
 }
