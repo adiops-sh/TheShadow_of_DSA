@@ -111,10 +111,50 @@ solution: int arr[] = {11, 4, 7, 22, 5, 18, 3, 6, 9, 2};
             }
           }
 
+11. Read all the elements which are in between 6 and 25 from an array which contains 10 elements?
+solution: int arr[] = {11, 4, 7, 22, 5, 18, 3, 6, 9, 2};
+           for(int i=0;i<arr.length;i++){
+            if(arr[i] >=6 && arr[i] <=25 ) {
+             System.out.print(arr[i]+" ");
+            }
+           }
+
+12. Read all the elements which are in between 15 and 25 and in between 35 and 60 from an array which contains 10 elements? 
+solution:  int arr[] = {12, 18, 24, 33, 42, 59, 61, 5, 37, 26};
+        for(int i=0;i<arr.length;i++){
+            if((arr[i] >=15 && arr[i] <=25) || (arr[i] >=35 && arr[i] <=60)) {
+            System.out.print(arr[i]+" ");
+            }
+        }
+
+13. Read all the elements from the starting to ending?
+solution: int arr[] = {12, 18, 24, 33, 42, 59, 61, 5, 37, 26};
+        for(int i=0;i<arr.length;i++){
+            System.out.print(arr[i]+" ");
+        }
+ 
+
+14. Read first half of the elements from an array which contains 10 elements?
+solution: int arr[] = {12, 18, 24, 33, 42, 59, 61, 5, 37, 26};
+        for(int i=0;i<arr.length/2;i++){
+            System.out.print(arr[i]+" ");
+        }
+
+15. Read 2nd half of the elements from an array which contains 10 elements?
+solution: int arr[] = {12, 18, 24, 33, 42, 59, 61, 5, 37, 26};
+        for(int i=arr.length/2;i<arr.length;i++){
+            System.out.print(arr[i]+" ");
+        }
+
 */
 public class Practice1{
      
     public static void main(String[] args) {
         System.out.println("Happy Coding!");
+        // 65. Read 2nd half of the elements from an array which contains 10 elements?
+        int arr[] = {12, 18, 24, 33, 42, 59, 61, 5, 37, 26};
+        for(int i=arr.length/2;i<arr.length;i++){
+            System.out.print(arr[i]+" ");
+        }
     }
 }
