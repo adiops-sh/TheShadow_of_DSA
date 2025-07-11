@@ -146,6 +146,70 @@ solution: int arr[] = {12, 18, 24, 33, 42, 59, 61, 5, 37, 26};
             System.out.print(arr[i]+" ");
         }
 
+16. Read every element in the reverse order?
+solution: int arr[] = {10,9,8,7,6,5,4,3,2,1};
+        for(int i=0;i<arr.length/2;i++){
+              int t = arr[i]; //12
+              arr[i] = arr[arr.length-i-1]; // 26
+            arr[arr.length-i-1]=t;
+         
+        }
+        System.out.println(Arrays.toString(arr));
+
+17. Read first half of the elements in the reverse order from an array which contains 10 elements?
+solution: int arr[] = {1,2,3,4,5,6,7,8,9,10};
+        for(int i = arr.length/2 - 1; i >= 0; i--) {
+        System.out.print(arr[i] + " ");
+         }
+          
+18. Read 2nd half of the elements in the reverse order from an array which contains 10 elements?
+solution: int arr[] = {1,2,3,4,5,6,7,8,9,10};
+        for(int i = arr.length-1; i>=arr.length/2; i--) {
+           System.out.print(arr[i] + " ");
+        }
+
+19. Read all the elements from an array except first element?
+solution: int arr[] = {1,2,3,4,5,6,7,8,9,10};
+          for(int i = 1; i<arr.length; i++) {
+           System.out.print(arr[i] + " ");
+        }
+
+
+20. Read all the elements from an array except first 3 elements?
+solution: int arr[] = {1,2,3,4,5,6,7,8,9,10};
+          for(int i = 3; i<arr.length; i++) {
+           System.out.print(arr[i] + " ");
+        }
+
+21. Read all the elements from an array except last element?
+solution: int arr[] = {1,2,3,4,5,6,7,8,9,10};
+        for(int i = 0; i<arr.length-1; i++) {
+        System.out.print(arr[i] + " ");
+        }
+
+22. Read all the elements from an array except last 3 elements?
+solution: int arr[] = {1,2,3,4,5,6,7,8,9,10};
+        for(int i = 0; i<arr.length-3; i++) {
+        System.out.print(arr[i] + " ");
+        }
+
+23. Read all the elements from an arrayexcept first and last elements?
+solution: int arr[] = {1,2,3,4,5,6,7,8,9,10};
+        for(int i = 1; i<arr.length-1; i++) {
+        System.out.print(arr[i] + " ");
+        }
+
+24. Read all the elements from an array except middle element?
+solution: int arr[] = {1,2,3,4,5,6,7,8,9,10};
+        int mid = arr.length/2;
+        for(int i = 0; i<arr.length; i++) {
+        if(mid != i){
+            System.out.print(arr[i] + " ");
+        }else{
+          continue;
+        }
+        }
+        
 */
 public class Practice1{
      
