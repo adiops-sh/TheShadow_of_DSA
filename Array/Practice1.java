@@ -209,6 +209,53 @@ solution: int arr[] = {1,2,3,4,5,6,7,8,9,10};
           continue;
         }
         }
+26. Read the min value from an array?
+solution: int arr[] = {1,2,3,4,5,6,7,8,9,10};
+        int min= Integer.MAX_VALUE;
+        for(int i=0;i<arr.length;i++){
+            if(arr[i] < min){
+            min=arr[i];
+            }
+        }
+            System.out.println(min);
+
+27. Read the max value from an array?
+solution: int arr[] = {1,2,3,4,5,6,7,8,9,10};
+        int max= Integer.MIN_VALUE;
+        for(int i=0;i<arr.length;i++){
+            if(arr[i] > max){
+            max=arr[i];
+            }
+        }
+            System.out.println(max);
+
+28. Read the elements which are 5 multiples from array?
+solution: int arr[] = {1, 5, 10, 12, 15, 22, 25, 30, 33, 40};
+    for(int i=0;i<arr.length;i++){
+        if(arr[i] %5==0){
+            System.out.print(arr[i]+" ");
+        }
+    }
+
+29. Read the elements which are not 5 multiples from array?
+solution: int arr[] = {1, 5, 10, 12, 15, 22, 25, 30, 33, 40};
+    for(int i=0;i<arr.length;i++){
+        if(arr[i] % 5 != 0){
+            System.out.print(arr[i]+" ");
+        }
+    }
+
+30. Read the min even value from an array? 
+solution: int arr[] = {1,2,3,4,5,6,7,8,9,10};
+        int min = Integer.MAX_VALUE;
+        for(int i=0;i<arr.length;i++){
+            if(arr[i] % 2==0){
+            if(arr[i] < min){
+            min=arr[i];
+            }
+            }
+        }
+    System.out.println(min);  
         
 */
 public class Practice1{
