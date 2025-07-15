@@ -329,6 +329,129 @@ solution: int arr[] = {1,2,3,4,5,6,7,8};
             System.out.println("Array doesn't have even number of elements or has less than 6 elements.");
         }
 
+38. Read all odd values from an array in between 10 and 25
+solution: int arr[] = {11, 13, 15, 17, 20, 22, 23, 25};
+        for(int i=0;i<arr.length;i++){
+          if(arr[i] %2 != 0 && arr[i]>=10 && arr[i] <= 25){
+            System.out.print(arr[i]+" ");
+          }
+        }
+
+39. Read all even values from an array in between 10 and 25
+solution: int arr[] = {11, 13, 15, 17, 20, 22, 23, 25};
+        for(int i=0;i<arr.length;i++){
+          if(arr[i] %2 == 0 && arr[i]>=10 && arr[i] <= 25){
+            System.out.print(arr[i]+" ");
+          }
+        }
+
+40. Read all odd values from an array which are less than 10 or greater than 30
+solution: int arr[] = {11, 13, 15, 17, 20, 22, 23, 25};
+        for(int i=0;i<arr.length;i++){
+          if(arr[i] %2 != 0 && (arr[i]<10 || arr[i] >30)){
+            System.out.print(arr[i]+" ");
+          }
+        }
+
+41. Read all even values from an array which are less than 10 or greater than 30
+solution: int arr[] = {11, 13, 15, 17, 20, 22, 23, 25};
+        for(int i=0;i<arr.length;i++){
+          if(arr[i] %2 == 0 && (arr[i]<10 || arr[i] >30)){
+            System.out.print(arr[i]+" ");
+          }
+        }
+
+42. Find out sum of all the elements
+solution:  int arr[] = {11, 13, 15, 17, 20, 22, 23, 25};
+            int  sum=0;
+             for(int x:arr){
+              sum +=x; 
+             }
+               System.out.println(sum);
+
+43. Find out sum of all the even elements
+solution: int arr[] = {11, 13, 15, 17, 20, 22, 23, 25};
+            int  sum = 0;
+             for(int i=0;i<arr.length;i++){
+              if(arr[i] %2==0){
+               sum+=arr[i];
+              }
+             }
+               System.out.println(sum);
+
+44. Find out sum of all the odd elements
+solution:  int arr[] = {11, 13, 15, 17, 20, 22, 23, 25};
+            int  sum = 0;
+        for(int i=0;i<arr.length;i++){
+            if(arr[i] %2!=0){
+             sum+=arr[i];
+            }
+        }
+            System.out.println(sum);
+
+45. Find out sum of all the elements except first and last elements
+solution: int arr[] = {11, 13, 15, 17, 20, 22, 23, 25};
+            int  sum=0;
+            for(int i=1;i<arr.length-1;i++){
+            sum+=arr[i];
+            }
+            System.out.println(sum);
+
+46. Find out sum of all the elements except first, last and middle elements (total elements are odd)
+solution:  int arr[] =  {5, 10, 15, 20, 25, 30, 35};
+            int  sum=0;
+             int mid=arr.length/2;
+            for(int i=1;i<arr.length-1;i++){
+             if(mid != i){
+               sum+=arr[i];
+             }
+            }
+            System.out.println(sum);
+
+47. Find out avg of all the elements
+solution: int arr[] = {11, 13, 15, 17, 20, 22, 23, 25};
+            int  sum=0;
+            for(int x:arr){
+            sum +=x; 
+            }
+            double avg = (double) sum / arr.length;
+            System.out.println(avg);
+
+48. Find out avgof all the even elements
+solution: int arr[] = {11, 13, 15, 17, 20, 22, 23, 25};
+            int  sum=0,count=0;
+            for(int x:arr){
+             if(x %2==0){
+               sum +=x; 
+               count++;
+             }
+           
+            }
+            double avg = (double) sum / count;
+            System.out.println(avg);
+
+49. Find out avgof all the odd elements
+solution: int arr[] = {11, 13, 15, 17, 20, 22, 23, 25};
+            int  sum=0,count=0;
+            for(int x:arr){
+             if(x %2!=0){
+               sum +=x; 
+               count++;
+             }
+           
+            }
+            double avg = (double) sum / count;
+            System.out.println(avg);
+
+50. Find out avgof all the elements except first and last elements
+solution:  int arr[] = {11, 13, 15, 17, 20, 22, 23, 25};
+            int  sum=0;
+            for(int i=1;i<arr.length-1;i++){
+            sum+=arr[i];
+            }
+            double avg = ((double) sum/arr.length)-2;
+            System.out.println(avg);
+
 */
 public class Practice1{
      
