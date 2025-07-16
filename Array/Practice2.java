@@ -124,22 +124,62 @@ solution:int arr[] = {12, 25, 37, 40, 45, 50, 60};
     double avg = (double) sum/count;        
     System.out.println(avg);
 
+111. Find out avg of all the elements except first, last and middle elements (total elements are odd) and also odd even index
+solution: int arr[] = {12, 25, 37, 40, 45, 50, 60};
+    int sum=0,mid=arr.length/2, count=0;
+        for(int i=1;i<arr.length-1;i++){
+            if( mid != i && i%2 == 0  ){
+                    sum+=arr[i];
+                    count++;
+            }
+        }
+    double avg = (double)sum/count;
+    System.out.println(avg);
+
+112. Find out min value from the first half where total number of elements are even?
+solution: int arr[] = {18, 25, 7, 14, 36, 42, 55, 63};
+        int min=Integer.MAX_VALUE;
+        for(int i=0;i<arr.length/2;i++){
+            if(arr[i] < min ){
+                    min=arr[i];
+            }
+        }
+        System.out.println(min);   
+
+113. Find out max value from the first half where total number of elements are even?
+solution:  int arr[] = {18, 25, 7, 14, 36, 42, 55, 63};
+        int max=Integer.MIN_VALUE;
+        for(int i=0;i<arr.length/2;i++){
+            if(arr[i] > max ){
+                    max=arr[i];
+            }
+        }
+        System.out.println(max);   
+
+114. Find out min value from the 2nd halfwhere total number of elements are even?
+solution: int arr[] = {18, 25, 7, 14, 36, 42, 55, 63};
+        int min=Integer.MAX_VALUE;
+        for(int i=arr.length/2;i<arr.length;i++){
+            if(arr[i] < min ){
+                    min=arr[i];
+            }
+        }
+        System.out.println(min); 
+
+115. Find out max value from the 2nd halfwhere total number of elements are even?
+solution: int arr[] = {18, 25, 7, 14, 36, 42, 55, 63};
+        int max=Integer.MIN_VALUE;
+        for(int i=arr.length/2;i<arr.length;i++){
+            if(arr[i] > max ){
+                    max=arr[i];
+            }
+        }
+        System.out.println(max);   
+
 */
 
 class Practice2{
     public static void main(String[] args) {
-        System.out.println("hello ");
-        int arr[] = {12, 25, 37, 40, 45, 50, 60};
-        int mid=arr.length/2;
-        int sum=0;
-        int count=0;
-        for(int i=1;i<arr.length-1;i++){
-         if(mid != i){
-          sum+=arr[i];
-          count++;
-         }
-        }
-         double avg = (double) sum/count;
-         System.out.println(avg);
+        System.out.println("Happy Coding!");
     }
 }
