@@ -1,10 +1,10 @@
 /*
-  1. Fibonacci of n Number.
+6. Fibonacci of n Number.
 solution :- public static  int Fib(int num){
         if(num < 2){
             return num;
-         }
-       return Fib(num -1) + Fib(num-2);
+        }
+      return Fib(num -1) + Fib(num-2);
     }   
 
     int num=10;
@@ -12,7 +12,7 @@ solution :- public static  int Fib(int num){
       System.out.print(Fib(i)+" ");
     }
 
- 2.Recursive Binary Search in a Sorted Array
+7.Recursive Binary Search in a Sorted Array
 solution : int arr[] ={1,2,3,5,6,7,8};
         int left =0;
         int right = arr.length-1;
@@ -39,7 +39,7 @@ solution : int arr[] ={1,2,3,5,6,7,8};
       return binarySearch(arr, left,mid-1, target);
     }
   }
-3. Tail Recusion:
+ #  Tail Recusion:
 solution:  int num = 5;
       int result = factorialTail(num, 1);  // Start with acc = 1
       System.out.println("Factorial of " + num + " is: " + result);

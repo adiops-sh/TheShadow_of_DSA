@@ -1,5 +1,5 @@
 /*
-1. print N to 1 Number using Recursion.
+8. print N to 1 Number using Recursion.
 solution: int n = 5;
             Print_N(n);
 
@@ -11,7 +11,7 @@ solution: int n = 5;
     Print_N(n-1);
 }
 //===================================================================
-2. print 1 to N Number using Recursion.
+9. print 1 to N Number using Recursion.
 solution: int n = 5;
         Print_N(1,n);
 
@@ -23,7 +23,7 @@ solution: int n = 5;
     Print_N(c + 1 , n);
 }
 //===================================================================
-3. print Product of N to 1 Number using Recursion.
+10. print Product of N to 1 Number using Recursion.
 solution: int n = 5;
         int res = product(n);
         System.out.println(res);
@@ -36,7 +36,7 @@ solution: int n = 5;
       return n * product(n-1);
 }
 //===================================================================
-4. print Sum of N to 1 Number using Recursion.
+11. print Sum of N to 1 Number using Recursion.
 solution: int n = 5;
         int res = sum(n);
         System.out.println(res);
@@ -48,7 +48,7 @@ solution: int n = 5;
       return n + sum(n-1);
 }
 //===================================================================
-5. print Sum of Digit umber using Recursion.
+12. print Sum of Digit umber using Recursion.
 solution :  int n = 123;
         int res = sumOfDigit(n);
         System.out.println(res);
@@ -61,7 +61,7 @@ solution :  int n = 123;
        return lastDigit + sumOfDigit(n/10);
 }
 //===================================================================
-6. print Product of Digit umber using Recursion.
+13. print Product of Digit umber using Recursion.
 solution: int n = 12345;
         int res = productOfDigit(n);
         System.out.println(res);
@@ -74,7 +74,7 @@ solution: int n = 12345;
        return lastDigit * productOfDigit(n/10);
 }
 //===================================================================
-7. print Reverse a Number using Recursion.
+14. print Reverse a Number using Recursion.
 solution: int n = 12345;
         int res = reverseOfNumber(n);
         System.out.println(res);
@@ -93,7 +93,7 @@ solution: int n = 12345;
     return reverseHelper(n/10, rev);
  }
 //===================================================================
-8. Find number Palindrome is or NOT. using Recursion.
+15. Find number Palindrome is or NOT. using Recursion.
 solution:  int n = 12321;
         if (isPalindrome(n)) {
             System.out.println(n + " is a Palindrome.");
