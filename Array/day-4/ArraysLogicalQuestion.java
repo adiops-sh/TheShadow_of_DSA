@@ -178,7 +178,7 @@ solution: int arr[] = {18, 25, 7, 14, 36, 42, 55, 63};
 
 */
 
-class Practice2{
+class ArraysLogicalQuestion{
     public static void main(String[] args) {
         System.out.println("Happy Coding!");
     }
