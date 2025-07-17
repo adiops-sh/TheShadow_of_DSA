@@ -1,5 +1,4 @@
 /*
-
  1. Factorial of a Number
  solution:-  int result = factorialOfNumber(5);
         System.out.println("Factorial is: " + result); 
