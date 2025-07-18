@@ -174,7 +174,34 @@ solution: int arr[] = {18, 25, 7, 14, 36, 42, 55, 63};
                     max=arr[i];
             }
         }
-        System.out.println(max);   
+        System.out.println(max);  
+
+116. Define an array with 10 accommodations. Store 35 in the first location.
+solution: int arr [] = new int [10];
+        arr[0]=35;
+        System.out.println(Arrays.toString(arr));
+
+117. Define an array with 10 accommodations. Store 25 in the 2nd location.
+solution: int arr [] = new int [10];
+        arr[1]=25;
+        System.out.println(Arrays.toString(arr));
+
+118. Define an array with 10 accommodations. Store 25 in the 1st location and 45 in the 2nd location.
+solution: int arr [] = new int [10];
+        arr[0]=25;
+        arr[1]=45;
+        System.out.println(Arrays.toString(arr));
+
+119. Define an array with 10 accommodations. Store 25 in the last location.
+solution: int arr [] = new int [10];
+        arr[arr.length-1]=25;
+        System.out.println(Arrays.toString(arr));
+
+120. Define an array with 10 accommodations. Store 25 in the last location and 200 in the last but one location.
+solution: int arr [] = new int [10];
+        arr[arr.length-1]=25;
+         arr[arr.length-2]=200;
+        System.out.println(Arrays.toString(arr));
 
 */
 
