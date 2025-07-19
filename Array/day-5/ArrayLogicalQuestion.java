@@ -89,34 +89,158 @@ solution: int arr[] = {10, 20, 30, 400, 500, 110, 540};
 131. Assume these are the element in the array.
 {10, 20, 30, 400, 500, 110, 540}
 Try replacing current element with sum of prev two elements
+solution: int arr[] = {10, 20, 30, 400, 500, 110, 540};
+
+    for(int i = 2; i < arr.length; i++) {
+        
+            arr[i] = arr[i-1] + arr[i-2];
+        
+    }
+    
+    System.out.println(Arrays.toString(arr));
+
+
 132. Assume these are the element in the array.
 {10, 20, 30, 400, 500, 110, 540}
 Try replacing current element with sum of next two elements
+solution: int arr[] = {10, 20, 30, 400, 500, 110, 540};
+
+    for(int i = 0; i < arr.length-2; i++) {
+        
+            arr[i] = arr[i+1] + arr[i+2];
+        
+    }
+    
+    System.out.println(Arrays.toString(arr));
+
+
 133. Assume these are the element in the array.
 {10, 20, 30, 400, 500, 110, 540}
 Try replacing current element with difference of prev two elements
+solution: int arr[] = {10, 20, 30, 400, 500, 110, 540};
+
+    for(int i = 2; i < arr.length; i++) {
+        
+            arr[i] = arr[i-1] - arr[i-2];
+        
+    }
+    
+    System.out.println(Arrays.toString(arr));
+
 134. Assume these are the element in the array.
 {10, 20, 30, 400, 500, 110, 540}
 Try replacing current element with differenceof next two elements
+solution: int arr[] = {10, 20, 30, 400, 500, 110, 540};
+
+    for(int i = 0; i < arr.length-2; i++) {
+        
+            arr[i] = arr[i+1] - arr[i+2];
+        
+    }
+    
+    System.out.println(Arrays.toString(arr));
+
 135. Assume these are the element in the array.
 {10, 20, 30, 400, 500, 110, 540}
 Try replacing every element by reducing 1 unit
+solution: int arr[] = {10, 20, 30, 400, 500, 110, 540};
+
+    for(int i = 0; i < arr.length; i++) {
+        
+            arr[i] = arr[i] - 1;
+        
+    }
+    
+    System.out.println(Arrays.toString(arr));
+
 136. Assume these are the element in the array.
 {10, 20, 30, 400, 500, 110, 540}
 Try replacing every element by increasing 1 unit
+solution: int arr[] = {10, 20, 30, 400, 500, 110, 540};
+
+    for(int i = 0; i < arr.length; i++) {
+        
+            arr[i] = arr[i] + 1;
+        
+    }
+    
+    System.out.println(Arrays.toString(arr));
+
 137. Assume these are the element in the array.
 {10, 20, 30, 400, 500, 110, 540, 90}
 Try replacing every element by increasing 1 unit in the first half and replacing every element by reducing one unit
+solution: int arr[] = {10, 20, 30, 400, 500, 110, 540,90};
+
+    for(int i = 0; i < arr.length; i++) {
+        if(i < arr.length/2){
+            arr[i] = arr[i] + 1;
+        }else{
+            arr[i] = arr[i] - 1;
+        } 
+    }
+    
+    System.out.println(Arrays.toString(arr));
+
 138. Assume these are the element in the array.
 {10, 20, 30, 400, 500, 110, 540, 90}
 Try replacing middle elements with a first element
+solution: int arr[] = {10, 20, 30, 400, 500, 110, 540,90};
+int mid = arr.length/2; 
+int firstEle = arr[0];
+
+ if(arr.length % 2 == 0) {
+    // Even length array
+    int mid1 = arr.length / 2 - 1;
+    int mid2 = arr.length / 2;
+    arr[mid1] = firstEle;
+    arr[mid2] = firstEle;
+} else {
+    // Odd length array
+    int mid = arr.length / 2;
+    arr[mid] = firstEle;
+}
+    System.out.println(Arrays.toString(arr));
+
 139. Assume these are the element in the array.
 {10, 20, 30, 400, 500, 110, 540, 90}
 Try replacing middle elements with a last element
+solution: int arr[] = {10, 20, 30, 400, 500, 110, 540,90};
+int mid = arr.length/2; 
+int lastEle = arr[arr.length-1];
+
+ if(arr.length % 2 == 0) {
+    // Even length array
+    int mid1 = arr.length / 2 - 1;
+    int mid2 = arr.length / 2;
+    arr[mid1] = lastEle;
+    arr[mid2] = lastEle;
+} else {
+    // Odd length array
+    int mid = arr.length / 2;
+    arr[mid] = lastEle;
+}
+    System.out.println(Arrays.toString(arr));
+
 140. Assume these are the element in the array.
 {10, 20, 30, 400, 500, 110, 540, 90}
 Try replacing middle elements with a sum of first last element    
+solution: int arr[] = {10, 20, 30, 400, 500, 110, 540,90};
+int mid = arr.length/2; 
+int Ele = arr[arr.length-1] + arr[0];
 
+ if(arr.length % 2 == 0) {
+    // Even length array
+    int mid1 = arr.length / 2 - 1;
+    int mid2 = arr.length / 2;
+    arr[mid1] = Ele;
+    arr[mid2] = Ele;
+} else {
+    // Odd length array
+    int mid = arr.length / 2;
+    arr[mid] = Ele;
+}
+    System.out.println(Arrays.toString(arr));
+    
  */
 
 public class ArrayLogicalQuestion {
