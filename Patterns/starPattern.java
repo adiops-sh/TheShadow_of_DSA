@@ -91,7 +91,8 @@ solution: int n=5;
       *****
        ***
         *
-solution: for(int i = 0; i < n; i++) {
+solution: int n=5;
+    for(int i = 0; i < n; i++) {
     for(int sps = 0; sps < i; sps++) {
         System.out.print(" ");
     }
@@ -119,13 +120,32 @@ solution: for(int i = 0; i < n; i++) {
        * * *
       * * * *
      * * * * *
+solution: int n=5;
+    for(int i = 1; i <= n; i++) {
+        for(int sps = 0; sps < n-i; sps++) {
+            System.out.print(" ");
+        }
+        for(int j = 0; j < i; j++) {
+            System.out.print("* ");
+        }
+        System.out.println();
+    }
 
 10.  * * * * *
       * * * *
        * * *
         * *
          *
-
+solution: int n=5;
+    for(int i = 1; i <= n; i++) {
+        for(int sps = 0; sps < i; sps++) {
+            System.out.print(" ");
+        }
+        for(int j = 0; j<=n-i; j++) {
+            System.out.print("* ");
+        }
+        System.out.println();
+    }
 
 11.  * * * * *
       * * * *
@@ -162,7 +182,24 @@ solution: for(int i = 0; i < n; i++) {
        *   *
         * *
          *
+solution:  int n=5;
+    for(int i = 1; i <= n*2; i++) {
+        int sp = (i <= n) ? (n-i) : (i-n);
+        for(int sps=0;sps < sp;sps++){
+            System.out.print(" ");
+        }
 
+        int print = (i <= n) ? i : (2*n-i);
+
+        for(int j = 1; j <= print; j++) {
+            if(j == 1 || j == print) {
+                System.out.print("* ");
+            }else{
+                System.out.print("  "); // double sps for better allignment
+            }
+        }
+        System.out.println();
+    }
 
 
 15.   **********
@@ -193,7 +230,17 @@ solution: for(int i = 0; i < n; i++) {
        *  *
        *  *
        ****
-
+solution: int n=5;
+    for(int i = 1; i <= n; i++) {
+        for(int j = 1; j<=n; j++) {
+            if(j==1 || i==1 || i==5 || j==5){
+                System.out.print("*");
+            }else{
+                System.out.print(" ");
+            }
+        }
+        System.out.println();
+    }
 
 
 18.        *      *
@@ -216,7 +263,20 @@ solution: for(int i = 0; i < n; i++) {
         *   *
        *   *
       *****
-
+solution: int n=5;
+    for(int i = 1; i <= n; i++) {
+        for(int sps=0;sps<n-i;sps++){
+            System.out.print(" ");
+        }
+        for(int j = 1; j<=n; j++) {
+            if(j==1 || i==1 || i==5 || j==5){
+                System.out.print("*");
+            }else{
+                System.out.print(" ");
+            }
+        }
+        System.out.println();
+    }
 
 21.      *
         * *
@@ -227,7 +287,20 @@ solution: for(int i = 0; i < n; i++) {
        * * *
         * *
          *
+solution: int n=5;
+    for(int i = 1; i <= n*2; i++) {
+        int sp = (i <= n) ? (n-i) : (i-n);
+        for(int sps=0;sps < sp;sps++){
+            System.out.print(" ");
+        }
 
+        int print = (i <= n) ? i : (2*n-i);
+
+        for(int j = 1; j <= print; j++) {
+            System.out.print("* ");
+        }
+        System.out.println();
+    }
 22.      
        *        *
        **      **
@@ -243,21 +316,5 @@ solution: for(int i = 0; i < n; i++) {
 public class starPattern{
     public static void main(String[] args) {
         System.out.println("Happy Coding!");
-        int n=5;
-
-for(int i = 0; i < n; i++) {
-    for(int sps = 0; sps < i; sps++) {
-        System.out.print(" ");
-    }
-
-    for(int j = 0; j < (2 * (n - i) - 1); j++) {
-        System.out.print("*");
-    }
-
-    System.out.println();
-}
-
-        
-
     }
 }
