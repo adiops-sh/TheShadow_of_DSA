@@ -230,7 +230,24 @@ solution:  int n=5;
       ***    ***
       ****  ****
       **********
+solution: int n=5;
+        for(int i=0;i<n*2;i++){
+            int stars = (i < n) ? n-i : i-n+1;
+             int sps = (n-stars) * 2;
+            for(int j=1;j<=stars;j++){
+                System.out.print("*");
+            }
 
+            for(int j=0;j<sps;j++){
+                System.out.print(" ");
+            }
+            
+            for(int j=1;j<=stars;j++){
+                System.out.print("*");
+            }
+
+            System.out.println();
+        }
 
 16.    *        *
        **      **
@@ -383,6 +400,7 @@ solution: int n=7;
 
 public class starPattern{
     public static void main(String[] args) {
-        System.out.println("Happy Coding!");
+        System.out.println("Happy Coding!"); 
+        
     }
 }
