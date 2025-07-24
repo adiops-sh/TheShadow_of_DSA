@@ -241,7 +241,27 @@ solution:  int n=5;
        ***    ***
        **      **
        *        *
+solution: int n=5;
+        for(int i=1;i<n*2;i++){
+            int print = ( i<=n ) ? i : (2*n-i) ;
+            int spaces = (n - print) * 2;  //8 //6 //2 //0 //2 ...
 
+             //left stars
+            for(int j=1;j<=print;j++){
+                System.out.print("*");
+            }
+
+            // Middle spaces
+            for (int j = 1; j <= spaces; j++) {
+                System.out.print(" ");
+            }
+            //right stars
+            for(int j=1;j<=print;j++){
+                System.out.print("*");
+            }
+
+            System.out.println();
+         }
 
 17.    ****
        *  *
@@ -360,6 +380,7 @@ solution: int n=7;
         }   
 
  */
+
 public class starPattern{
     public static void main(String[] args) {
         System.out.println("Happy Coding!");
