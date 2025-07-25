@@ -243,7 +243,7 @@ int Ele = arr[arr.length-1] + arr[0];
     
  */
 
-public class ArrayLogicalQuestion {
+public class ArrayLogicalQuestions {
     public static void main(String[] args) {
         System.out.println("Happy Coding!");
     }

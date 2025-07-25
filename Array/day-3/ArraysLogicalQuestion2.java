@@ -195,7 +195,7 @@ solution:  int arr[] = {11, 13, 15, 17, 20, 22, 23, 25};
             System.out.println(avg);
             
  */
-public class ArraysLogicalQuestion {
+public class ArraysLogicalQuestion2 {
     public static void main(String[] args) {
         System.out.println("Happy Coding!");
     }
