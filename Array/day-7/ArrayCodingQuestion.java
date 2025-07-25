@@ -170,6 +170,41 @@ solution: int[] oldArray = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};
             }
                 System.out.println(Arrays.toString(newArray));
 
+174.  Check if an array is a palindrome
+solution: int[] arr = {10, 20, 30, 40, 30, 20, 10};
+        boolean isPalindrome = true;
+
+        for (int i = 0; i < arr.length / 2; i++) {
+            if (arr[i] != arr[arr.length - i - 1]) {
+                isPalindrome = false;
+                break;
+            }
+        }
+
+        if (isPalindrome) {
+            System.out.println("Array is a palindrome");
+        } else {
+            System.out.println("Array is NOT a palindrome");
+        }
+
+
+175. Write a program to check if elements of an array are same or not while reading from front or back
+{10, 20, 30, 40, 50, 60, 50, 40, 30, 20, 10}
+solution: int arr [] ={10, 20, 30, 40, 50, 60, 50, 40, 30, 20, 10}; 
+        boolean flag = true;
+        for(int i=0;i<arr.length/2;i++){
+            if(arr[i] != arr[arr.length-i-1]){
+                flag=false;
+                break;
+            }
+        }
+
+        if(flag==true){
+            System.out.println("Same (Array is symmetric)");
+        }else{
+            System.out.println("Not same (Array is not symmetric)");
+        }
+
  */
 
 public class ArrayCodingQuestion {
