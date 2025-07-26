@@ -27,7 +27,7 @@ solution: int n=5;
        32123
         212
          1
-
+solution: 
 
 4.    1
       2  3
@@ -126,8 +126,10 @@ solution: int n=5;
           System.out.println();
         }
  */
+
 public class numberPattern {
      public static void main(String[] args) {
         System.out.println("Happy Coding!");
+        
      }
 }
