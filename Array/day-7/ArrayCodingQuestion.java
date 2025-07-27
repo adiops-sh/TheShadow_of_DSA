@@ -205,6 +205,17 @@ solution: int arr [] ={10, 20, 30, 40, 50, 60, 50, 40, 30, 20, 10};
             System.out.println("Not same (Array is not symmetric)");
         }
 
+176. Find the Missing Number
+{2, 4, 8, 16, ?, 64}
+solution: int arr[] = {2, 4, 8, 16, -1, 64};
+            for(int i=0;i<arr.length-1;i++){
+                if(arr[i+1] == -1){
+                    arr[i+1] = arr[i]*2;
+                    break;
+                }
+            }
+                System.out.println(Arrays.toString(arr));
+
  */
 
 public class ArrayCodingQuestion {
