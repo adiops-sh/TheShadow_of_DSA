@@ -120,12 +120,77 @@ solution: String str = "Elon Musk Tesla";
             do{
                 System.out.print(str.charAt(i)+" ");
                 i++;
-            }while(i<10)
+            }while(i<10);
+
+16. Print the first 10 characters through a for loop but except white spaced?
+solution:   String str = "Elon Musk Tesla";
+            int count =0;
+                for(int i=0;i<str.length();i++){
+                    if(str.charAt(i) != ' '){
+                        System.out.print(str.charAt(i)+" ");
+                        count++;
+                    }
+                        if(count==10){
+                            break;
+                        }
+                }
+
+
+17. Print the first 10 characters through a while loop but except white spaced?
+solution:  String str = "Elon Musk Tesla";
+            int count = 0;
+            int i=0;
+            while(i<str.length()){
+                if(str.charAt(i) != ' '){
+                    System.out.print(str.charAt(i)+" ");
+                        count++;
+                        if(count==10){
+                            break;
+                        }
+                }
+                    i++;
+            }
+
+
+18. Print the first 10 characters through a do while loop but except white spaced?
+solution:  String str = "Elon Musk Tesla";
+            int i=0;
+            int count = 0;
+            do{
+                if(str.charAt(i) != ' '){
+                    System.out.print(str.charAt(i)+" ");
+                        count++;
+                        if(count==10){
+                            break;
+                        }
+                }
+                        i++;
+            }while(i<str.length());
+
+
+19. Print all the characters through a for loop?
+solution:  String str = "Elon Musk Tesla";
+            for(int i=0;i<str.length();i++){
+                System.out.print(str.charAt(i)+" ");
+            }
+
+
+20. Print all the characters through a while loop? 
+solution:  String str = "Elon Musk Tesla";
+            int i=0;
+            while(i<str.length()){
+                System.out.print(str.charAt(i)+" ");
+                i++;
+            }
+
  */
 
 public class LogicalStringQuestion {
     public static void main(String [] args){
         System.out.println("Happy Coding!");
+        String str = "Elon Musk Tesla";
+        
+       
 
     }
 }
