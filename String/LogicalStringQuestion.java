@@ -183,14 +183,47 @@ solution:  String str = "Elon Musk Tesla";
                 i++;
             }
 
+21. Print all the characters through a do-while loop?
+solution:   String str = "Elon Musk Tesla";
+            int i=0;
+            do{
+                System.out.print(str.charAt(i)+" ");
+                i++;
+            }while(i<str.length());
+
+22. Print the last 10 characters through a while loop?
+solution:  String str = "Elon Musk Tesla";
+            int i=str.length()-10;
+            while(i<str.length()){
+                System.out.print(str.charAt(i) + " ");
+                i++;
+            }
+
+23. Print the last 10 characters through a do while loop?
+solution:  String str = "Elon Musk Tesla";
+            int i=str.length()-10;
+            do{
+                System.out.print(str.charAt(i) + " ");
+                i++;
+            }while(i<str.length());
+
+24. Print the last 10 characters through a for loop?
+solution:  String str = "Elon Musk Tesla";
+            for (int i = str.length() - 10; i < str.length(); i++) {
+                System.out.print(str.charAt(i) + " ");
+            }
+
+25. Print all the characters in the reverse order through a for loop?
+solution:  String str = "Elon Musk Tesla";
+            for(int i=str.length()-1; i>=0;i--){
+                System.out.print(str.charAt(i)+" ");
+            }
+
  */
 
 public class LogicalStringQuestion {
     public static void main(String [] args){
         System.out.println("Happy Coding!");
-        String str = "Elon Musk Tesla";
         
-       
-
     }
 }
