@@ -219,6 +219,81 @@ solution:  String str = "Elon Musk Tesla";
                 System.out.print(str.charAt(i)+" ");
             }
 
+26. Print all the characters in the reverse order through a while loop?
+solution: String str = "Elon Musk Tesla";
+            int i=str.length()-1;
+            while(i>=0){
+                System.out.print(str.charAt(i)+" "); 
+                i--; 
+            }
+
+27. Print all the characters in the reverse order through a do-while loop?
+solution: String str = "Elon Musk Tesla";
+            int i=str.length()-1; 
+            do{
+                System.out.print(str.charAt(i)+" "); 
+                i--;
+            }while(i>=0);
+
+28. Print the last 10 characters in the reverse order through a while loop?
+solution: String str = "Elon Musk Tesla";
+            int i=str.length()-1;
+            int count=0;
+            while(i>=0){
+                System.out.print(str.charAt(i)+" "); 
+                count++;
+                i--;
+                if(count==10){
+                    break;
+                }
+            }
+
+29. Print the last 10 characters in the reverse order through a do while loop?
+solution: String str = "Elon Musk Tesla";
+            int i=str.length()-1;
+            int count=0;
+            do{
+                System.out.print(str.charAt(i)+" "); 
+                count++;
+                i--;
+                if(count==10){
+                    break;
+                }
+            }while(i>=0);
+
+30. Print the last 10 characters in the reverse order through a for loop?
+solution:  String str = "Elon Musk Tesla Infinite";
+            int count=0;
+            for(int i=str.length()-1;i>=0;i--){
+                System.out.print(str.charAt(i)+" ");
+                count++;
+                if(count==10){
+                    break;
+                } 
+            }
+
+31. Print the 12th index to 3rd index characters through a while loop?
+solution: String str = "ElonMuskTeslaInfinite";
+            int i=12;
+            while(i>=3){
+                System.out.print(str.charAt(i)+" ");
+                i--;
+            }
+
+32. Print the 12th index to 3rd index characters through a do-while loop?
+solution: String str = "ElonMuskTeslaInfinite";
+            int i=12;
+            do{
+                System.out.print(str.charAt(i)+" ");
+                i--;
+            }while(i>=3);
+
+33. Print the 12th index to 3rd index characters through a for loop?
+solution: String str = "ElonMuskTeslaInfinite";
+            for(int i=12;i>=3;i--){
+                System.out.print(str.charAt(i)+" ");
+            }
+
  */
 
 public class LogicalStringQuestion {
