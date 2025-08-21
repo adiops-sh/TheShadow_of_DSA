@@ -313,6 +313,25 @@ solution: public static int countVowels(String str) {
         String input = "Hello World";
         int result = countVowels(input);
         System.out.println("Number of vowels: " + result);
+
+35. Write a program to reverse a given string.        
+solution: String str = "Hello";
+            String reversed = reverseStr(str);
+            System.out.println("Original String: " + str);
+            System.out.println("Reversed String: " + reversed);
+        
+
+        public static String reverseStr(str){
+            int n = str.length();
+            char[] arr = str.toCharArray();
+
+            for(int i=0;i<n/2;i++){
+                char t = arr[i];
+                arr[i] = arr[n-i-1];
+                arr[n-i-1]= t;
+            }
+            return new String(arr);
+        }
  */
 
 public class LogicalStringQuestion {
