@@ -10,6 +10,7 @@ solution: int n = 5;
     System.out.print(n+" ");
     Print_N(n-1);
 }
+
 //===================================================================
 9. print 1 to N Number using Recursion.
 solution: int n = 5;
@@ -22,6 +23,7 @@ solution: int n = 5;
     System.out.print(c+" ");
     Print_N(c + 1 , n);
 }
+
 //===================================================================
 10. print Product of N to 1 Number using Recursion.
 solution: int n = 5;
@@ -78,7 +80,7 @@ solution: int n = 12345;
 solution: int n = 12345;
         int res = reverseOfNumber(n);
         System.out.println(res);
- 
+
     public static int reverseOfNumber(int n){
         return reverseHelper(n,0);
     }
@@ -91,7 +93,8 @@ solution: int n = 12345;
     int r = n% 10;
     rev = rev*10 +r;
     return reverseHelper(n/10, rev);
- }
+}
+
 //===================================================================
 15. Find number Palindrome is or NOT. using Recursion.
 solution:  int n = 12321;
@@ -105,7 +108,7 @@ solution:  int n = 12321;
         return n == reverse(n, 0);
     }
 
-     public static int reverse(int n, int rev) {
+    public static int reverse(int n, int rev) {
         if (n == 0) {
             return rev;
         }
