@@ -182,7 +182,24 @@ solution:  int n=5;
        *   *
       *     *
      *********
+solution: int n = 5; // height of the triangle
 
+        for (int i = 1; i <= n; i++) {
+            // print spaces before stars
+            for (int j = i; j < n; j++) {
+                System.out.print(" ");
+            }
+
+            // print stars with hollow inside
+            for (int j = 1; j <= (2 * i - 1); j++) {
+                if (j == 1 || j == (2 * i - 1) || i == n) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println(); // new line
+        }
 
 13.  *********
       *     *
@@ -401,6 +418,7 @@ solution: int n=7;
 public class starPattern{
     public static void main(String[] args) {
         System.out.println("Happy Coding!"); 
-        
+         
     }
+        
 }
