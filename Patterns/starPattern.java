@@ -201,14 +201,7 @@ solution: int n = 5; // height of the triangle
             System.out.println(); // new line
         }
 
-13.  *********
-      *     *
-       *   *
-        * *
-         *
-
-
-14.      *
+13.      *
         * *
        *   *
       *     *
@@ -237,7 +230,7 @@ solution:  int n=5;
     }
 
 
-15.   **********
+14.   **********
       ****  ****
       ***    ***
       **      **
@@ -266,7 +259,7 @@ solution: int n=5;
             System.out.println();
         }
 
-16.    *        *
+15.    *        *
        **      **
        ***    ***
        ****  ****
@@ -297,7 +290,7 @@ solution: int n=5;
             System.out.println();
         }
 
-17.    ****
+16.    ****
        *  *
        *  *
        *  *
@@ -315,11 +308,11 @@ solution: int n=5;
     }
 
 
-18.        *      *
+17.        *      *
          *   *  *   *
        *      *      *
 
-19.    *        *
+18.    *        *
        **      **
        * *    * *
        *  *  *  *
@@ -330,7 +323,7 @@ solution: int n=5;
        **      **
        *        *
 
-20.       *****
+19.       *****
          *   *
         *   *
        *   *
@@ -350,7 +343,7 @@ solution: int n=5;
         System.out.println();
     }
 
-21.      *
+20.      *
         * *
        * * *
       * * * *
@@ -374,7 +367,7 @@ solution: int n=5;
         System.out.println();
     }
 
-22. *     * 
+21. *     * 
     **    *  
     * *   * 
     *  *  *
@@ -394,7 +387,7 @@ solution: int n=7;
             System.out.println();
         }
 
-23. *     *
+22. *     *
      *   * 
       * *  
        *   
@@ -418,7 +411,7 @@ solution: int n=7;
 public class starPattern{
     public static void main(String[] args) {
         System.out.println("Happy Coding!"); 
-         
+        
     }
         
 }
