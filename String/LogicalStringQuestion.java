@@ -336,7 +336,6 @@ solution: String str = "Hello";
 
 public class LogicalStringQuestion {
     public static void main(String [] args){
-        System.out.println("Happy Coding!");
-        
+
     }
 }
