@@ -37,7 +37,7 @@ That’s the only strategy here.
 
 ## 🔗 Connect With Me
 
-- 🧑‍💼 [LinkedIn](https://www.linkedin.com/in/adiops-sh/)
+- 🧑‍💼 [LinkedIn](https://www.linkedin.com/in/aadityaguptaa1/)
 - 📂 [GitHub](https://github.com/adiops-sh)
 - 📸 [Instagram](https://www.instagram.com/adiops_sh)
 
