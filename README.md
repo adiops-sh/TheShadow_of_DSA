@@ -42,7 +42,6 @@ That’s the only strategy here.
 - 📸 [Instagram](https://www.instagram.com/adiops_sh)
 
 ~ Happy Learning! 😊
-
 ---
 
 **Let the shadows guide the logic... and the logic solve the problems.**  
