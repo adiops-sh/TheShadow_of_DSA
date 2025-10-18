@@ -216,10 +216,15 @@ solution: int arr[] = {2, 4, 8, 16, -1, 64};
             }
                 System.out.println(Arrays.toString(arr));
 
+177. Function with No Arg.
+solution: public static void printArray(){
+                System.out.println("Happy Coding!");
+            }                
+
  */
 
 public class ArrayCodingQuestion {
     public static void main(String [] args){
-        System.out.println("Happy Coding!");
+        System.out.println("Happy Coding!!");
     }
 }
