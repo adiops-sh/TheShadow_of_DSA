@@ -95,8 +95,21 @@ private static void negativeIntergerSum(int[] arr) {
             System.out.println("Sum of Negative Integers: " + sum);
     }           
 ==============================================================================================
-17. Find the pair of elements whose sum equals a given number.
-Solution:
+17. Find the pair of elements whose sum equals a given number(Target).
+Solution: private static void pairSumFinder(int[] arr, int tar) {
+        boolean flag = false;
+        for(int i=0;i<arr.length;i++){
+            for(int j=i+1;j<arr.length;j++){
+                if(arr[i] + arr[j] == tar){
+                    System.out.println("Pair is: (" + arr[i] + ", " + arr[j] + ")");
+                    flag = true;
+                }
+            }
+        }
+        if(!flag){
+            System.out.println("No such pair found.");
+    }
+}
 ==============================================================================================
 18. Find maximum product of two integers in an array.
 Solution:
@@ -111,7 +124,7 @@ Solution:
 */    
     public static void main(String[] args) {
         System.out.println("This is Level 2 Java file.");
-        int arr[] = {1,2,3,4,5,7};
+        int arr[] = {1,2,3,3,4,5};
         int n = 7;
         // removeDuplicate(arr);
         // moveZerosAtTheEnd(arr);
@@ -120,10 +133,6 @@ Solution:
         // countOddNumber(arr);
         //  positiveIntegerSum(arr);
         //  negativeIntergerSum(arr);
-
+        // pairSumFinder(arr,6);
     }
-
-
-    
-    
 }
