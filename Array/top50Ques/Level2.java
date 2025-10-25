@@ -49,7 +49,15 @@ private static int missingNumber(int[] arr, int n) {
     }
 ==============================================================================================
 14. Find the duplicate element in an array of size n (where numbers are 1 to n-1).
-Solution:
+Solution: for (int i = 0; i < arr.length; i++) {
+            int index = Math.abs(arr[i]); // get index
+            if (arr[index] < 0) {
+                
+                System.out.println(index);
+            } else {
+                arr[index] = -arr[index];
+            }
+        }
 ==============================================================================================
 15. Count even and odd numbers in an array.
 Solution: 
