@@ -1,5 +1,6 @@
 import java.util.Arrays;
 
+import javax.swing.plaf.basic.BasicInternalFrameUI.InternalFramePropertyChangeListener;
 public class Level2 {
 /*
     Level 2: Moderate (Logic Building)
@@ -120,7 +121,18 @@ Solution: private static void pairSumFinder(int[] arr, int tar) {
 }
 ==============================================================================================
 18. Find maximum product of two integers in an array.
-Solution:
+Solution: public static int maxProEle(int arr[]){
+            int pro = Integer.MIN_VALUE;
+            for(int i=0;i<=arr.length-1;i++){
+                for(int j=i+1;j<=arr.length-1;j++){
+                    if(arr[i]*arr[j]>pro){
+                        pro = arr[i]*arr[j];
+                    }
+                }
+
+            }
+            return pro;
+        }
 ==============================================================================================
 19. Find common elements in two arrays.
 Solution:
@@ -132,7 +144,7 @@ Solution:
 */    
     public static void main(String[] args) {
         System.out.println("This is Level 2 Java file.");
-        int arr[] = {1,2,3,3,4,5};
+        int arr[] = {1, 10, 2, 6, 5, 3};
         int n = 7;
         // removeDuplicate(arr);
         // moveZerosAtTheEnd(arr);
@@ -142,5 +154,9 @@ Solution:
         //  positiveIntegerSum(arr);
         //  negativeIntergerSum(arr);
         // pairSumFinder(arr,6);
+        // System.out.println(maxProEle(arr));
     }
+
+        
 }
+
