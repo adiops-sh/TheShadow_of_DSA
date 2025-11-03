@@ -1,6 +1,4 @@
-import java.util.Arrays;
-
-import javax.swing.plaf.basic.BasicInternalFrameUI.InternalFramePropertyChangeListener;
+// import java.util.Arrays;
 public class Level2 {
 /*
     Level 2: Moderate (Logic Building)
@@ -138,14 +136,40 @@ Solution: public static int maxProEle(int arr[]){
 Solution:
 ==============================================================================================
 20. Merge two sorted arrays into one sorted array.
-Solution:
+Solution: public static void mergeTwoSortedArrays(int[] arr1, int[] arr2) {
+        int n1 = arr1.length;
+        int n2 = arr2.length;
+        int mergeArray[] = new int[n1+n2];
+
+        for(int i=0;i<n1;i++){
+            mergeArray[i] = arr1[i];
+        }
+
+        for (int i = 0; i < n2; i++) {
+            mergeArray[n1 + i] = arr2[i];
+        }
+
+        for(int i=0;i<mergeArray.length;i++){
+            for(int j=i+1;j<mergeArray.length;j++){
+                if(mergeArray[i] > mergeArray[j]){
+                    int temp = mergeArray[i];
+                    mergeArray[i] = mergeArray[j];
+                    mergeArray[j] = temp;
+                }
+            }
+        }
+
+        System.out.println(Arrays.toString(mergeArray));
+    
+    }
 ==============================================================================================
 
 */    
     public static void main(String[] args) {
         System.out.println("This is Level 2 Java file.");
-        int arr[] = {1, 10, 2, 6, 5, 3};
-        int n = 7;
+        int arr1[] = {1,3,5};
+        int arr2[] = {2,4,6};
+
         // removeDuplicate(arr);
         // moveZerosAtTheEnd(arr);
         // System.out.println(missingNumber(arr, n));
@@ -155,8 +179,7 @@ Solution:
         //  negativeIntergerSum(arr);
         // pairSumFinder(arr,6);
         // System.out.println(maxProEle(arr));
+        // mergeTwoSortedArrays(arr1, arr2);
     }
-
-        
 }
 
