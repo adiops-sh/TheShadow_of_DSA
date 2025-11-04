@@ -228,7 +228,7 @@ solution: int arr[] = {10, 20, 30, 400, 500, 110, 540,90};
 int mid = arr.length/2; 
 int Ele = arr[arr.length-1] + arr[0];
 
- if(arr.length % 2 == 0) {
+if(arr.length % 2 == 0) {
     // Even length array
     int mid1 = arr.length / 2 - 1;
     int mid2 = arr.length / 2;
