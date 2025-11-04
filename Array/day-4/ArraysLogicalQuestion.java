@@ -200,7 +200,7 @@ solution: int arr [] = new int [10];
 120. Define an array with 10 accommodations. Store 25 in the last location and 200 in the last but one location.
 solution: int arr [] = new int [10];
         arr[arr.length-1]=25;
-         arr[arr.length-2]=200;
+        arr[arr.length-2]=200;
         System.out.println(Arrays.toString(arr));
 
 */
