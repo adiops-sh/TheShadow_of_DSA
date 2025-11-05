@@ -12,6 +12,7 @@ solution: int n=5;
             System.out.println();
         }
 
+
 2.  *
     **
     ***
@@ -25,13 +26,14 @@ solution: int n=5;
             System.out.println();
         }
 
+
 3.  *****
     ****
     ***
     **
     *
 solution: int n=5;
-       for(int i=0;i<n;i++){
+        for(int i=0;i<n;i++){
             for(int j=0;j<n-i;j++){
                 System.out.print("*");
             }
@@ -397,5 +399,4 @@ public class starPattern{
     public static void main(String[] args) {
         System.out.println("Hello Boss!");
     }
-        
 }
