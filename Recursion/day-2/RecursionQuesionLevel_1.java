@@ -10,7 +10,6 @@ solution: int n = 5;
     System.out.print(n+" ");
     Print_N(n-1);
 }
-
 //===================================================================
 9. print 1 to N Number using Recursion.
 solution: int n = 5;
@@ -23,7 +22,6 @@ solution: int n = 5;
     System.out.print(c+" ");
     Print_N(c + 1 , n);
 }
-
 //===================================================================
 10. print Product of N to 1 Number using Recursion.
 solution: int n = 5;
@@ -34,7 +32,6 @@ solution: int n = 5;
         if(n==1){
             return 1;
         }
-
       return n * product(n-1);
 }
 //===================================================================
@@ -47,7 +44,7 @@ solution: int n = 5;
         if(n == 1){
             return 1;
         }
-      return n + sum(n-1);
+    return n + sum(n-1);
 }
 //===================================================================
 12. print Sum of Digit umber using Recursion.
@@ -60,7 +57,7 @@ solution :  int n = 123;
             return 0;
         }
         int lastDigit = n % 10;
-       return lastDigit + sumOfDigit(n/10);
+    return lastDigit + sumOfDigit(n/10);
 }
 //===================================================================
 13. print Product of Digit umber using Recursion.
