@@ -26,7 +26,7 @@ solution:  String s = "AadItYa";
                 System.out.print(ch);
         }  
 Question 4: write a program to count number of digits, alphabets and special characters in a string.  
-String s = "AadItY63192^&)%#a"; 
+solution: String s = "AadItY63192^&)%#a"; 
         int num=0, alpha=0, specialChar=0;  
         for(int i=0;i<s.length();i++){
             char ch = s.charAt(i);
@@ -42,7 +42,26 @@ String s = "AadItY63192^&)%#a";
         }
         System.out.println(num+" "+alpha+" "+specialChar);
 
+Question 5: write a program to remove Duplicate.
+solution:   String s = "AadItYa";
+            String temp ="";
+        for(int i=0;i<=s.length()-1;i++){
+            char ch = s.charAt(i);
+            if(!temp.contains(ch+"")){
+                temp+=ch;
+            }
+        }
+    System.out.println(temp);
 
+Question 5: write a program to reverse the sentence.
+solution: String s = "welcome aditya gupta";
+            String [] s1= s.split(" ");
+            String temp ="";
+        for(int i=s1.length-1;i>=0;i--){
+            temp+=s1[i]+" ";
+        }
+        temp = temp.trim();
+        System.out.println(temp);
 */
 public class levelOne {
     public static void main(String[] args) {
