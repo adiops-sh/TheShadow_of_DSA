@@ -62,6 +62,19 @@ solution: String s = "welcome aditya gupta";
         }
         temp = temp.trim();
         System.out.println(temp);
+
+Question: string is palindrome or not.    
+solution: String s = "naman";
+        for(int i=0;i<s.length();i++){
+            char ch = s.charAt(i);
+            if(ch != s.charAt(s.length()-1-i)){
+                System.out.println("not palinderome");
+                return;          
+            }else{
+                System.out.println("palindrome");
+                return;
+            }
+        }     
 */
 public class levelOne {
     public static void main(String[] args) {
