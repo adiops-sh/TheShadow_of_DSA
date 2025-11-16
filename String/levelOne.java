@@ -63,7 +63,7 @@ solution: String s = "welcome aditya gupta";
         temp = temp.trim();
         System.out.println(temp);
 
-Question: string is palindrome or not.    
+Question 6: string is palindrome or not.    
 solution: String s = "naman";
         for(int i=0;i<s.length();i++){
             char ch = s.charAt(i);
@@ -74,10 +74,14 @@ solution: String s = "naman";
                 System.out.println("palindrome");
                 return;
             }
-        }     
+        } 
+Question 7: Count Words in a String.
+solution: String s = "Aadi loves Java";
+        String words[] = s.trim().split("\\s+");
+        System.out.println("Words: " + words.length);               
 */
 public class levelOne {
     public static void main(String[] args) {
-        
+     System.out.println("Hello World!");   
     }
 }
