@@ -74,14 +74,42 @@ solution: String s = "naman";
                 System.out.println("palindrome");
                 return;
             }
-        } 
+        }
+            
 Question 7: Count Words in a String.
 solution: String s = "Aadi loves Java";
         String words[] = s.trim().split("\\s+");
-        System.out.println("Words: " + words.length);               
+        System.out.println("Words: " + words.length); 
+
+Question 8:     
+solution: String s1 = "Hii Guys may I know when get assignment from your end";
+        String[] arr = s1.split(" ");
+        for(int i = 0; i < arr.length; i++) {
+            if(i % 2 == 0) {
+                arr[i] = reverseString(arr[i]);
+            }
+        }
+        String result = "";
+        for(int i = 0; i < arr.length; i++) {
+            result = result + arr[i];
+            if(i < arr.length - 1) {
+                result = result + " "; 
+            }
+        }
+        System.out.println(result); 
+
+    public static String reverseString(String str) {
+        String r = "";
+        for(int i = str.length() - 1; i >= 0; i--) {
+            r = r + str.charAt(i);
+        }
+        return r;
+    }                
 */
+
 public class levelOne {
     public static void main(String[] args) {
-     System.out.println("Hello World!");   
+        System.out.println("Hello World!!");  
+        
     }
 }
