@@ -8,7 +8,7 @@ class InsertionInTail {
             this.next = null;
         }
     }
-
+// i have to start here from tommorrow.
     public void insertAtEnd(int newData){
         Node newNode = new Node(newData);
         if(head == null){
