@@ -24,7 +24,8 @@ solution:  String s = "AadItYa";
                     ch = (char)(ch+32);
                 }
                 System.out.print(ch);
-        }  
+        } 
+
 Question 4: write a program to count number of digits, alphabets and special characters in a string.  
 solution: String s = "AadItY63192^&)%#a"; 
         int num=0, alpha=0, specialChar=0;  
@@ -53,7 +54,7 @@ solution:   String s = "AadItYa";
         }
     System.out.println(temp);
 
-Question 5: write a program to reverse the sentence.
+Question 6: write a program to reverse the sentence.
 solution: String s = "welcome aditya gupta";
             String [] s1= s.split(" ");
             String temp ="";
@@ -63,7 +64,7 @@ solution: String s = "welcome aditya gupta";
         temp = temp.trim();
         System.out.println(temp);
 
-Question 6: string is palindrome or not.    
+Question 7: string is palindrome or not.    
 solution: String s = "naman";
         for(int i=0;i<s.length();i++){
             char ch = s.charAt(i);
@@ -76,12 +77,12 @@ solution: String s = "naman";
             }
         }
             
-Question 7: Count Words in a String.
+Question 8: Count Words in a String.
 solution: String s = "Aadi loves Java";
         String words[] = s.trim().split("\\s+");
         System.out.println("Words: " + words.length); 
 
-Question 8:     
+Question 9:     
 solution: String s1 = "Hii Guys may I know when get assignment from your end";
         String[] arr = s1.split(" ");
         for(int i = 0; i < arr.length; i++) {
@@ -109,7 +110,7 @@ solution: String s1 = "Hii Guys may I know when get assignment from your end";
 
 public class levelOne {
     public static void main(String[] args) {
-        System.out.println("Hello World!!");  
+        System.out.println("Hello World!");  
         
     }
 }
